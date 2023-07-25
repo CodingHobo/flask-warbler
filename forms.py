@@ -43,9 +43,8 @@ class LoginForm(FlaskForm):
     )
 
     password = PasswordField(
-        'Password',
+        'Enter "password"',
         validators=[InputRequired(), Length(min=6, max=50)],
-        render_kw={"placeholder": "Enter 'password'"},
     )
 
 class UserEditForm(UserAddForm):
