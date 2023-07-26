@@ -42,7 +42,7 @@
           <li class="stat">
             <p class="small">Likes</p>
             <a href="/users/{{ user.id }}/likes">
-            <h4>{{ user.liked_messages | length }}</h4>
+            {{ user.liked_messages | length }}
           </a>
           </li>
 
